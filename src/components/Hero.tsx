@@ -27,7 +27,7 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
         >
-          <span className="text-glow">I Nyoman Parta</span>
+          <span className="text-glow">I Nyoman Parta Yasa</span>
         </motion.h1>
 
         {/* Subtitle */}
