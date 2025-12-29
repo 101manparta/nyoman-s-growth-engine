@@ -13,7 +13,7 @@ export const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <p className="text-muted-foreground text-sm font-mono">
-              © {new Date().getFullYear()} I Nyoman Parta
+              © {new Date().getFullYear()} I Nyoman Parta Yasa
             </p>
             <p className="text-muted-foreground/60 text-xs mt-1">
               Built with precision. Deployed with purpose.
@@ -37,7 +37,7 @@ export const Footer = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/"
+              href="https://www.linkedin.com/in/manparta01x0/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
@@ -46,7 +46,7 @@ export const Footer = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:contact@example.com"
+              href="mailto:manparta0101@gmail.com"
               className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
               aria-label="Email"
             >
