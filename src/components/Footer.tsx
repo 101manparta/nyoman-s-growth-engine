@@ -37,7 +37,7 @@ export const Footer = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/manparta01x0/"
+              href="https://www.linkedin.com/in/i-nyoman-parta-yasa-55204331a/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
