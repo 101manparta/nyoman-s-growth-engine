@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Coffee, Atom } from 'lucide-react';
+import { ExternalLink, Github, Coffee, Atom, HeartPulse } from 'lucide-react';
 
 const projects = [
   {
@@ -12,7 +12,8 @@ const projects = [
     liveLink: "https://quantum-explained.vercel.app",
     githubLink: "https://github.com/manparta/quantum-explained",
     icon: <Atom className="w-8 h-8 text-blue-400" />,
-    urlDisplay: "quantum-explained.vercel.app"
+    urlDisplay: "quantum-explained.vercel.app",
+    headline: "Interactive Computing Education"
   },
   {
     id: 2,
@@ -24,13 +25,27 @@ const projects = [
     liveLink: "https://kaman-coffee.netlify.app/",
     githubLink: "https://github.com/manparta/kaman-coffee",
     icon: <Coffee className="w-8 h-8 text-amber-600" />,
-    urlDisplay: "kaman-coffee.netlify.app"
+    urlDisplay: "kaman-coffee.netlify.app",
+    headline: "Elevating Coffee Experience"
+  },
+  {
+    id: 3,
+    tag: "Healthcare Platform",
+    title: "Mediflow Solutions",
+    subtitle: "Smart digital healthcare workflow system",
+    description: "A healthcare platform designed to streamline medical workflows, patient management, and service efficiency through a clean, modern, and responsive interface.",
+    tech: ['React', 'Tailwind CSS', 'Healthcare UI', 'Netlify'],
+    liveLink: "https://mediflow-solutions.netlify.app/",
+    githubLink: "https://github.com/manparta/mediflow-solutions",
+    icon: <HeartPulse className="w-8 h-8 text-emerald-400" />,
+    urlDisplay: "mediflow-solutions.netlify.app",
+    headline: "Digital Healthcare Workflow System"
   }
 ];
 
 export const FeaturedProject = () => {
   return (
-    <section className="section-container space-y-20"> {/* Ditambah space-y agar antar project ada jarak */}
+    <section className="section-container space-y-20">
       {projects.map((project, index) => (
         <div key={project.id}>
           {/* Header Section */}
@@ -57,9 +72,9 @@ export const FeaturedProject = () => {
             <div className="border-gradient p-1">
               <div className="glass-card rounded-lg p-8 md:p-12">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
-                  
+
                   {/* Content */}
-                  <div className={index % 2 !== 0 ? "md:order-2" : ""}> {/* Membuat layout zig-zag biar keren */}
+                  <div className={index % 2 !== 0 ? "md:order-2" : ""}>
                     <div className="flex items-center gap-3 mb-4">
                       <span className="px-2 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-mono border border-emerald-500/20">
                         LIVE
@@ -67,7 +82,7 @@ export const FeaturedProject = () => {
                     </div>
 
                     <h3 className="text-2xl md:text-3xl font-semibold mb-4">
-                      {project.title === "Kaman Coffee" ? "Elevating Coffee Experience" : "Interactive Computing Education"}
+                      {project.headline}
                     </h3>
 
                     <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -124,6 +139,7 @@ export const FeaturedProject = () => {
                         </div>
                       </div>
                     </div>
+
                     {/* Glow effect */}
                     <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
                   </div>

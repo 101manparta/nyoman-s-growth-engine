@@ -28,7 +28,7 @@ export const Footer = () => {
             className="flex items-center gap-4"
           >
             <a
-              href="https://github.com/manparta"
+              href="https://github.com/101manparta"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
